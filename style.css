@@ -50,6 +50,7 @@ html {
     align-items: center;
     padding: 20px;
     height: calc(70vh);
+    position: relative;
 }
 
 .header h1,
@@ -63,9 +64,12 @@ html {
 
 .new-text1, .new-text2, .new-text3, .new-text4 {
     display: flex;
-    align-items: center;  
-    opacity: 0;
+    align-items: center;
+    opacity: 1;
     transition: opacity 0.5s ease;
+    position: absolute; /* 부모 요소 내에서 위치 조정 가능 */
+    top: 50%; /* 수직 가운데 */
+    transform: translateY(-50%); /* 정확한 수직 가운데 정렬 */
 }
 
 .new-text-img {
