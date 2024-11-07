@@ -71,7 +71,6 @@ html {
     top: 50%; /* 수직 가운데 */
     transform: translateY(-50%); /* 정확한 수직 가운데 정렬 */
 }
-
 .new-text-img {
     width: 150px;  /* 이미지 크기 */
     height: auto;
