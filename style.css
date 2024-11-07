@@ -19,7 +19,7 @@
 
 h1 {
     color: #353535;
-    font-size: 50px;  
+    font-size: 70px;  
     font-weight: bold;
 }
 
@@ -104,7 +104,7 @@ html {
 }
 
 .character:hover img {
-    transform: scale(1.15); /* 이미지 확대 효과 */
+    transform: scale(1.5); /* 이미지 확대 효과 */
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3)); /* 외곽 그림자 효과 */
 }
 
