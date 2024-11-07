@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    color: #fff;
+    font-family: 'CookieRun-Regular';
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.content{
+    font-size: 25px;
+    color: #353535;
+}
+
+h1 {
+    color: #353535;
+    font-size: 50px;  
+    font-weight: bold;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #FFEB3B;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background-color: #2196F3;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: calc(70vh);
+}
+
+.header h1,
+.header p {
+    margin: 0;
+}
+
+.original-text {
+    transition: opacity 0.5s;
+}
+
+.new-text1, .new-text2, .new-text3, .new-text4 {
+    display: flex;
+    align-items: center;  
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.new-text-img {
+    width: 150px;  /* 이미지 크기 */
+    height: auto;
+    padding: 5px;  /* padding을 주어 이미지 영역을 확장 */
+    margin-right: 50px;  /* 이미지와 텍스트 사이에 간격 */
+    border-radius: 50%;  /* 원형 보더 */
+    border: 5px dashed rgb(255, 255, 255);  /* 점선 보더 */
+    box-sizing: content-box;  /* 보더가 padding 영역을 침범하지 않도록 설정 */
+}
+
+.new-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* 텍스트를 왼쪽 정렬 */
+}
+
+/* 캐릭터 영역 스타일 */
+.character-area {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #FFEB3B;
+    flex: 3;
+    height: calc(30vh);
+    padding: 20px;
+}
+
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.character:hover img {
+    transform: scale(1.15); /* 이미지 확대 효과 */
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3)); /* 외곽 그림자 효과 */
+}
+
+.character:active img {
+    transform: scale(1.02); /* 클릭 시 살짝 줄어드는 효과 */
+}
+
+.character a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* 가운데 정렬 */
+}
+
+.gray-line {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: #3b3b3b; /* 회색 */
+    bottom: 62px;
+}
+
+.glasses-image {
+    position: absolute;
+    bottom: 45px; /* 회색 줄 바로 위에 위치 */
+    left: 50%;
+    transform: translateX(-50%); /* 가운데 정렬 */
+    width: 80px; /* 안경 이미지 크기 조정 */
+    height: auto;
+}
+
+.new-gray-line {
+    border-style: dashed;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    background-color: #3b3b3b; /* 회색 */
+    bottom: 0; /* 화면 맨 밑에 위치 */
+}
